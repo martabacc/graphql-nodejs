@@ -12,7 +12,7 @@ app.use('/graphql', graphqlHTTP(req => ({
 })));
 
 // Connect to mongo database
-mongoose.connect('mongodb://localhost/graphql');
+mongoose.connect('mongodb://mongo/graphql');
 
 //start server
 const server = app.listen(8082, () => {
